@@ -1,6 +1,9 @@
+import Printer from './Printer.js';
+
 export default class Document {
     constructor(informations) {
         this.informations = informations;
+        this.printer = new Printer();
     }
 
     lancerImpression() {
@@ -19,14 +22,18 @@ export default class Document {
 
     preparerEncres() {
         console.log("Préparation des encres...");
+        this.printer.setEncre('couleur');
     }
 
     verifierPapier() {
         console.log("Vérification du papier...");
+        this.printer.setFormat('A4');
     }
 
     imprimer() {
         console.log("Impression en cours...");
+        this.printer.preparer();
+        this.printer.lancer();
     }
 
     decouper() {
@@ -41,4 +48,3 @@ export default class Document {
         console.log("Impression terminée !");
     }
 }
-

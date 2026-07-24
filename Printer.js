@@ -33,7 +33,7 @@ export default class Printer {
         console.log(`Préparation de l'imprimante : format ${this.format}, encre ${this.encre}`);
     }
 
-    lancer(params) {
-        console.log(`Lancement de l'impression avec les paramètres : ${JSON.stringify(params)}`);
+    lancer() {
+        console.log(`Lancement de l'impression avec les paramètres : format ${this.format}, encre ${this.encre}`);
     }
 }
