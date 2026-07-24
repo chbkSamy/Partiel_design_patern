@@ -18,13 +18,9 @@ Utilisé pour centraliser la création des documents. Ce choix permet d'éviter 
 
 Utilisé pour intégrer la carte vitale au système sans modifier le code fourni par la CPAM. Ce choix permet de rendre compatible une interface externe différente avec l'interface attendue par le système d'impression.
 
-### Encapsulation
-
-Dans ce projet, elle permet d'isoler les informations techniques d'impression et le comportement propre à chaque document, tout en limitant l'accès direct aux détails d'implémentation.
-
 ## Pourquoi ces choix
 
-Ces choix répondent directement aux contraintes du sujet. Template Method fixe le processus global, Factory Method centralise la création des objets, Adapter assure l'intégration du système externe, et l'encapsulation renforce la séparation des responsabilités.
+Ces choix répondent directement aux contraintes du sujet. Template Method fixe le processus global, Factory Method centralise la création des objets et l'Adapter assure l'intégration du système externe.
 
 ## Instructions d'exécution
 
