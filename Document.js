@@ -45,6 +45,6 @@ export default class Document {
     }
 
     terminerImpression() {
-        console.log("Impression terminée !");
+        console.log("Fin de l'impression.");
     }
 }
