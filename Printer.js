@@ -1,41 +1,39 @@
-class Printer {
-  constructor() {
-    this.format = null;
-    this.encre = null;
-    this.parametres = {};
-  }
+export default class Printer {
+    constructor() {
+        this.format = null;
+        this.encre = null;
+        this.parametres = {};
+    }
 
-  setFormat(format) {
-    this.format = format;
-  }
+    setFormat(format) {
+        this.format = format;
+    }
 
-  setEncre(encre) {
-    this.encre = encre;
-  }
+    setEncre(encre) {
+        this.encre = encre;
+    }
 
-  setParametres(parametres) {
-    this.parametres = parametres;
-  }
+    setParametres(parametres) {
+        this.parametres = parametres;
+    }
 
-  getFormat() {
-    return this.format;
-  }
+    getFormat() {
+        return this.format;
+    }
 
-  getEncre() {
-    return this.encre;
-  }
+    getEncre() {
+        return this.encre;
+    }
 
-  getParametres() {
-    return this.parametres;
-  }
+    getParametres() {
+        return this.parametres;
+    }
 
-  preparer() {
-    console.log(`Préparation de l'imprimante : format ${this.format}, encre ${this.encre}`);
-  }
+    preparer() {
+        console.log(`Préparation de l'imprimante : format ${this.format}, encre ${this.encre}`);
+    }
 
-  lancer(params) {
-    console.log(`Lancement de l'impression avec les paramètres : ${JSON.stringify(params)}`);
-  }
+    lancer(params) {
+        console.log(`Lancement de l'impression avec les paramètres : ${JSON.stringify(params)}`);
+    }
 }
-
-module.exports = Printer;
